@@ -4,5 +4,5 @@ from django.urls import path
 app_name = "main"
 
 urlpatterns = [
-    path("", lambda request: render(request, 'main/home.html'), name='home'),
+    path("", lambda request: render(request, "main/home.html"), name="home"),
 ]

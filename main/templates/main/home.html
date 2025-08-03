@@ -1,0 +1,6 @@
+{% extends "main/base.html" %}
+{% block title %}Home - PlayTrack{% endblock %}
+
+{% block content %}
+    <h1>Welcome <span style="color: red; font-size: 50px">{{ request.user.username|capfirst }}</span> to playtrack!</h1>
+{% endblock %}

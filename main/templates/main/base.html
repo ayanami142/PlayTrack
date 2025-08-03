@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/style.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}PlayTrack{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% include "main/partials/_navbar.html" %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    {% include "main/partials/_footer.html" %}
+</body>
+</html>
